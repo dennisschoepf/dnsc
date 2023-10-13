@@ -6,3 +6,25 @@ theme = 'dnsc'
 [params]
   author = "Dennis Schoepf"
   description = "Hi, I'm Dennis! Software Developer by trade, creating digital solutions for public transport @Digital-H. If I'm not developing you can find me swimming, biking, running or photographing (and nerding out on split ergonomic keyboards)."
+
+[menu]
+  [[menu.nav]]
+    name = "Home"
+    pageRef = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Work"
+    pageRef = "/projects"
+    weight = 2
+  [[menu.nav]]
+    name = "Resources"
+    pageRef = "/resources"
+    weight = 3
+  [[menu.nav]]
+    name = "Writing"
+    pageRef = "/posts"
+    weight = 4
+  [[menu.nav]]
+    name = "About"
+    pageRef = "/about"
+    weight = 5
