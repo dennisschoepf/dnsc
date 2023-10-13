@@ -5,9 +5,9 @@
   <body
     class="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400"
   >
-    {{- partial "header.html" . -}}
+    {{ if not .Params.excludeHeader }} {{- partial "header.html" . -}} {{ end }}
     <main
-      class="flex-1 grow mx-auto w-screen max-w-screen-2xl px-6 sm:px-7 xl:px-8 2xl:px-10 pt-4 sm:pt-16"
+      class="mx-auto w-screen max-w-screen-2xl px-6 sm:px-7 xl:px-8 2xl:px-10 pt-4 sm:pt-16"
     >
       {{- block "main" . }}{{- end }}
     </main>
