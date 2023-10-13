@@ -1,0 +1,6 @@
+name = "dnsc"
+description = "My personal theme"
+
+[author]
+  name = "Dennis Schoepf"
+  homepage = "https://github.com/dennisschoepf/"

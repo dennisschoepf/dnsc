@@ -1,3 +1,4 @@
 baseURL = 'https://dnsc.io/'
 languageCode = 'de-DE'
 title = 'DNSC - Home'
+theme = 'dnsc'
