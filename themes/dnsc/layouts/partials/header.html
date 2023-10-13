@@ -1,4 +1,4 @@
-<header class="mx-auto w-screen p-4">
+<header class="mx-auto w-screen md:p-4 p-3">
   {{/* CSS functionality for menu toggle */}}
   <style type="text/css">
     input#nav-toggle:checked ~ label#show-button {
@@ -15,7 +15,7 @@
   </style>
 
   <nav
-    class="flex items-center justify-between flex-wrap bg-zinc-900 shadow-lg p-4 rounded"
+    class="flex items-center justify-between flex-wrap bg-zinc-900 shadow-xl p-3 rounded"
   >
     <a
       href="{{ .Site.Home.Permalink }}"
@@ -56,50 +56,30 @@
     <label
       id="show-button"
       for="nav-toggle"
-      class="flex items-center sm:hidden text-slate-600 dark:text-slate-400 hover:text-sky-500 cursor-pointer"
+      class="flex items-center sm:hidden text-white rounded bg-zinc-700 py-1 px-2 cursor-pointer"
+      >Menu</label
     >
-      <svg
-        class="fill-white h-4 w-4"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>Menu Open</title>
-        <path d="M0 3h20v2H0V3z m0 6h20v2H0V9z m0 6h20v2H0V0z" />
-      </svg>
-    </label>
     <label
       id="hide-button"
       for="nav-toggle"
-      class="items-center hidden text-white-700 hover:text-teal-500 cursor-pointer"
+      class="items-center hidden text-white rounded bg-zinc-700 py-1 px-2 cursor-pointer"
+      >Close</label
     >
-      <svg
-        class="fill-white h-4 w-4"
-        viewBox="0 0 20 20"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <title>Menu Close</title>
-        <polygon
-          points="11 9 22 9 22 11 11 11 11 22 9 22 9 11 -2 11 -2 9 9 9 9 -2 11 -2"
-          transform="rotate(45 10 10)"
-        />
-      </svg>
-    </label>
-
+    <!--
+-->
     <ul
       id="nav-menu"
-      class="sm:flex w-full sm:w-auto hidden mt-2 sm:mt-0 sm:space-x-2"
+      class="sm:flex w-full sm:w-auto hidden mt-4 sm:mt-0 sm:space-x-2"
     >
-      {{ with .Site.GetPage "/about" }}
-      <li>
+      {{ $current := . }} {{ range .Site.Menus.nav }} {{ $active := or
+      ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }} {{
+      $active = or $active (eq .Name $current.Title) }}
+      <li class="flex">
         <a
-          href="{{ .Permalink }}"
-          class="text-white border-b-white hover:border-b-2"
-          >{{ .Title }}</a
+          href="{{ .URL }}"
+          class="{{ if $active }}sm:bg-white sm:text-zinc-900 border-b-white {{ end }}border-b-2 border-zinc-900 sm:border-0 text-white hover:border-b-white sm:rounded sm:hover:bg-white sm:hover:text-zinc-900 px-0 mb-2 sm:mb-0 sm:py-1 sm:px-2 ml-auto mr-2 cursor-pointer"
+          >{{ .Name }}</a
         >
-      </li>
-      {{ end }} {{ range .Site.Sections }}
-      <li>
-        <a href="{{ .Permalink }}" class="hover:text-sky-500">{{ .Title }}</a>
       </li>
       {{ end }}
     </ul>
