@@ -1,4 +1,8 @@
 baseURL = 'https://dnsc.io/'
-languageCode = 'de-DE'
-title = 'DNSC - Home'
+languageCode = 'en-US'
+title = 'DNSC'
 theme = 'dnsc'
+
+[params]
+  author = "Dennis Schoepf"
+  description = "Hi, I'm Dennis! Software Developer by trade, creating digital solutions for public transport @Digital-H. If I'm not developing you can find me swimming, biking, running or photographing (and nerding out on split ergonomic keyboards)."
