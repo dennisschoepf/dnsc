@@ -1,24 +1,27 @@
-<footer
-  class="mx-auto max-w-prose w-screen mt-16 grid grid-cols-1 md:grid-cols-2 p-6 md:p-0"
->
-  {{ range .Site.Sections }} {{ $section := . }}
-  <section class="pb-3">
-    <a href="{{ $section.RelPermalink }}"
-      ><h2 class="font-bold text-zinc-900 mb-1">{{ $section.Title }}</h2></a
-    >
-    <ul>
-      {{ range .Site.Menus.footer }} {{ with .Page }} {{if (eq .Parent.Title
-      $section.Title) }}
-      <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
-      {{ end }} {{ end }} {{ end }}
-    </ul>
+<footer class="mx-auto max-w-prose w-screen mt-16 p-6 md:p-0">
+  <section id="footer-sitemap" class="grid grid-cols-2">
+    {{ range .Site.Sections }} {{ $section := . }}
+    <section class="pb-3">
+      <a href="{{ $section.RelPermalink }}"
+        ><h2 class="font-bold text-zinc-900 mb-1">{{ $section.Title }}</h2></a
+      >
+      <ul>
+        {{ range .Site.Menus.footer }} {{ with .Page }} {{if (eq .Parent.Title
+        $section.Title) }}
+        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        {{ end }} {{ end }} {{ end }}
+      </ul>
+    </section>
+    {{ end }}
   </section>
-  {{ end }}
-  <section class="mt-8 text-zinc-400">
-    <p>© Dennis Schoepf, 2023</p>
+  <section id="copyright" class="mt-8 text-zinc-400">
     <p>
-      Built with
+      © 2023 Dennis Schoepf, built with
       <a href="https://gohugo.io" class="underline" target="_blank">Hugo</a>
+    </p>
+    <p>
+      Socials > {{ range .Site.Params.socials }}
+      <a href=".ref" class="underline">{{ .name }}</a>{{ end }}
     </p>
   </section>
 </footer>
