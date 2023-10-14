@@ -7,39 +7,37 @@
 
 /* Site Specific */
 @layer base {
-  .md {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      @apply font-bold;
-      @apply mb-2;
-    }
+  .md h1,
+  h2,
+  h3,
+  h4,
+  h5 {
+    @apply font-bold;
+    @apply mb-2;
+  }
 
-    h1 {
-      @apply text-2xl;
-    }
+  .md h1 {
+    @apply text-2xl;
+  }
 
-    h2 {
-      @apply text-xl;
-    }
+  .md h2 {
+    @apply text-xl;
+  }
 
-    h3 {
-      @apply text-lg;
-    }
+  .md h3 {
+    @apply text-lg;
+  }
 
-    p {
-      @apply mb-2;
-    }
+  .md p {
+    @apply mb-2;
+  }
 
-    a {
-      @apply border-b-2;
-      @apply border-b-zinc-300;
-    }
+  .md a {
+    @apply border-b-2;
+    @apply border-b-zinc-300;
+  }
 
-    a:hover {
-      @apply bg-zinc-200;
-    }
+  .md a:hover {
+    @apply bg-zinc-200;
   }
 }
