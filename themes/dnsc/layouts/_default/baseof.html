@@ -2,9 +2,7 @@
 <html lang="{{ .Site.LanguageCode }}">
   {{ partial "head.html" . }}
 
-  <body
-    class="flex flex-col min-h-screen bg-slate-50 dark:bg-slate-800 text-slate-600 dark:text-slate-400"
-  >
+  <body class="flex flex-col min-h-screen bg-zinc-50 text-zinc-900">
     {{ if not .Params.excludeHeader }} {{- partial "header.html" . -}} {{ end }}
     <main
       class="mx-auto w-screen max-w-screen-2xl px-6 sm:px-7 xl:px-8 2xl:px-10 pt-4 sm:pt-16"
