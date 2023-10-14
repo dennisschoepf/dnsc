@@ -1,9 +1,10 @@
-<footer class="mx-auto max-w-prose w-screen my-16 p-6 md:p-0">
-  <section id="footer-sitemap" class="grid grid-cols-2">
+<footer class="mx-auto max-w-prose w-screen mb-0 md:my-16 p-6 md:p-0">
+  <hr class="mb-16" />
+  <section id="footer-sitemap" class="grid grid-cols-2 pb-6">
     {{ range .Site.Sections }} {{ $section := . }}
-    <section class="pb-3">
+    <section class="pb-4">
       <a href="{{ $section.RelPermalink }}"
-        ><h2 class="font-bold text-zinc-900">{{ $section.Title }}</h2></a
+        ><h2 class="font-bold mb-1 text-zinc-900">{{ $section.Title }}</h2></a
       >
       <ul>
         {{ range .Site.Menus.footer }} {{ with .Page }} {{if (eq .Parent.Title
@@ -16,7 +17,7 @@
     </section>
     {{ end }}
   </section>
-  <section id="copyright" class="mt-8 text-zinc-400">
+  <section id="copyright" class="mt-2 md:mt-8 text-zinc-400">
     <p>
       © 2023 Dennis Schoepf, built with
       <a href="https://gohugo.io" class="underline" target="_blank">Hugo</a>
