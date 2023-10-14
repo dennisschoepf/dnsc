@@ -6,6 +6,6 @@ excludeHeader = true
 draft = false
 +++
 
-# Hi, I'm Dennis!
+## Hey, there! 👋
 
-A munich-based software developer creating digital solutions for public transport. When I am not doing that, you can find me running, biking, swimming or taking photos.
+I'm Dennis, a software developer that crafts digital solutions for public transportation. Outside of work, you can find me [running, biking, swimming]({{<relref "/about/triathlon">}}) or taking [photos]({{<relref "/about/photography">}}). Take a look around here to find [resources]({{<relref "/resources" >}}) I frequently reference, examples of my [work]({{<relref "/projects">}}) and some [written thoughts]({{<relref "/posts">}}).
