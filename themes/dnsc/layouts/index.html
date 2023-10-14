@@ -1,7 +1,7 @@
 {{ define "main" }}
 
-<article class="justify-self-center mx-auto mt-12 max-w-prose">
-  <section class="flex items-center mb-8">
+<article class="justify-self-center mx-auto mt-16 max-w-prose">
+  <section class="flex items-center mb-16">
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
@@ -20,6 +20,6 @@
     </svg>
     <h1 class="ml-2 font-bold text-xl text-zinc-900">{{ .Site.Title }}</h1>
   </section>
-  {{ .Content }}
+  <section class="md mb-4">{{ .Content }}</section>
 </article>
 {{ end }}
