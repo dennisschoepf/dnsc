@@ -1,14 +1,16 @@
-<footer class="mx-auto max-w-prose w-screen mt-16 p-6 md:p-0">
+<footer class="mx-auto max-w-prose w-screen my-16 p-6 md:p-0">
   <section id="footer-sitemap" class="grid grid-cols-2">
     {{ range .Site.Sections }} {{ $section := . }}
     <section class="pb-3">
       <a href="{{ $section.RelPermalink }}"
-        ><h2 class="font-bold text-zinc-900 mb-1">{{ $section.Title }}</h2></a
+        ><h2 class="font-bold text-zinc-900">{{ $section.Title }}</h2></a
       >
       <ul>
         {{ range .Site.Menus.footer }} {{ with .Page }} {{if (eq .Parent.Title
         $section.Title) }}
-        <li><a href="{{ .RelPermalink }}">{{ .Title }}</a></li>
+        <li>
+          <a class="text-zinc-500" href="{{ .RelPermalink }}">{{ .Title }}</a>
+        </li>
         {{ end }} {{ end }} {{ end }}
       </ul>
     </section>
@@ -21,7 +23,8 @@
     </p>
     <p>
       Socials > {{ range .Site.Params.socials }}
-      <a href=".ref" class="underline">{{ .name }}</a>{{ end }}
+      <a href=".ref" class="underline">{{ .name }}</a>{{ end }} //
+      <a href="{{ .Site.Params.impressum }}" class="underline">Impressum</a>
     </p>
   </section>
 </footer>
