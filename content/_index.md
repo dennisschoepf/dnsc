@@ -8,4 +8,4 @@ draft = false
 
 ## Hey, there! 👋
 
-I'm Dennis, a software developer that crafts digital solutions for public transportation. Outside of work, you can find me [running, biking, swimming]({{<relref "/about/triathlon">}}) or taking [photos]({{<relref "/about/photography">}}). Take a look around here to find [resources]({{<relref "/resources" >}}) I frequently reference, examples of my [work]({{<relref "/projects">}}) and some [written thoughts]({{<relref "/posts">}}).
+I'm Dennis, a software developer that crafts digital solutions for public transportation. Outside of work, you can find me [swimming, biking, running ]({{<relref "/about/triathlon">}}) or taking [photos]({{<relref "/about/photography">}}). Take a look around here to find [resources]({{<relref "/resources" >}}) I frequently reference, examples of my [work]({{<relref "/projects">}}) and some [written thoughts]({{<relref "/posts">}}).
