@@ -6,6 +6,16 @@ theme = 'dnsc'
 [params]
   author = "Dennis Schoepf"
   description = "Hi, I'm Dennis! Software Developer by trade, creating digital solutions for public transport @Digital-H. If I'm not developing you can find me swimming, biking, running or photographing (and nerding out on split ergonomic keyboards)."
+  impressum = "/impressum"
+  [[params.socials]]
+    name = "Xing"
+    ref = "https://www.xing.com/profile/Dennis_Schoepf2"
+  [[params.socials]]
+    name = "Github"
+    ref = "https://github.com/dennisschoepf"
+  [[params.socials]]
+    name = "LinkedIn"
+    ref = "https://de.linkedin.com/in/dennis-sch%C3%B6pf-06b335102"
 
 [menu]
   [[menu.nav]]
