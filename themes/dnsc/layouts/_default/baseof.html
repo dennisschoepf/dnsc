@@ -4,11 +4,7 @@
 
   <body class="flex flex-col min-h-screen font-sans bg-zinc-50 text-zinc-900">
     {{ if not .Params.excludeHeader }} {{- partial "header.html" . -}} {{ end }}
-    <main
-      class="mx-auto w-screen max-w-screen-2xl px-3 sm:px-7 xl:px-8 2xl:px-10 pt-12 md:pt-16"
-    >
-      {{- block "main" . }}{{- end }}
-    </main>
+    <main>{{- block "main" . }}{{- end }}</main>
     {{- partial "footer.html" . -}}
   </body>
 </html>
