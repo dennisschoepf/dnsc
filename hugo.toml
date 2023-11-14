@@ -22,11 +22,11 @@ theme = 'dnsc'
   [[menu.nav]]
     name = "Work"
     pageRef = "/projects"
-    weight = 2
+    weight = 4
   [[menu.nav]]
     name = "Resources"
     pageRef = "/resources"
-    weight = 3
+    weight = 2
   [[menu.nav]]
     name = "Writing"
     pageRef = "/posts"
