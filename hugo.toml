@@ -20,10 +20,6 @@ theme = 'dnsc'
 
 [menu]
   [[menu.nav]]
-    name = "Home"
-    pageRef = "/"
-    weight = 1
-  [[menu.nav]]
     name = "Work"
     pageRef = "/projects"
     weight = 2
