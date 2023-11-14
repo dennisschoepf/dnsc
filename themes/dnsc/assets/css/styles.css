@@ -10,3 +10,13 @@
     @apply bg-zinc-200;
   }
 }
+
+@layer components {
+  .screen-container {
+    @apply mx-auto;
+    @apply px-6;
+    @apply md:px-0;
+    @apply w-screen;
+    @apply max-w-prose;
+  }
+}
