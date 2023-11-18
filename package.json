@@ -5,8 +5,8 @@
   "scripts": {
     "start": "hugo serve",
     "build": "hugo",
-    "deploy:staging": "rm -rf /home/dennis/services/staging.dnsc.io/html && hugo --minify --buildDrafts && mv ./public/* ../services/staging.dnsc.io/html/.",
-    "deploy:prod": "rm -rf /home/dennis/services/dnsc.io/html && hugo --minify && mv ./public/* ../services/dnsc.io/html/."
+    "deploy:staging": "rm -rf /home/dennis/services/staging.dnsc.io/html && npm run build -- -b https://staging.dnsc.io -d html --minify -D && mv ./html /home/dennis/services/staging.dnsc.io/",
+    "deploy:prod": "rm -rf /home/dennis/services/dnsc.io/html && npm run build -- -b https://dnsc.io --minify -d html && mv ./html /home/dennis/services/dnsc.io/"
   },
   "author": "Dennis Schoepf",
   "devDependencies": {
