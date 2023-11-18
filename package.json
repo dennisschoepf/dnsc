@@ -4,7 +4,9 @@
   "description": "My personal website",
   "scripts": {
     "start": "hugo serve",
-    "build": "hugo"
+    "build": "hugo",
+    "deploy:staging": "rm -rf /home/dennis/services/staging.dnsc.io/html && hugo --minify --buildDrafts && mv ./public/* ../services/staging.dnsc.io/html/.",
+    "deploy:prod": "rm -rf /home/dennis/services/dnsc.io/html && hugo --minify && mv ./public/* ../services/dnsc.io/html/."
   },
   "author": "Dennis Schoepf",
   "devDependencies": {
