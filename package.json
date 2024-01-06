@@ -4,7 +4,9 @@
   "description": "My personal website",
   "scripts": {
     "start": "hugo serve",
-    "build": "hugo"
+    "build": "hugo",
+    "deploy:staging": "hugo && rsync -azP --delete ./public/* dnsc-server:/var/www/staging.dnsc.io",
+    "deploy:prod": "hugo && rsync -azP --delete ./public/* dnsc-server:/var/www/dnsc.io"
   },
   "author": "Dennis Schoepf",
   "devDependencies": {
