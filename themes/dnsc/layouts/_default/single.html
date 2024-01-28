@@ -4,5 +4,6 @@
 >
   <h1>{{ .Title }}</h1>
   <section>{{ .Content }}</section>
+  <p class="text-sm text-zinc-500 mt-16 text-right">Last updated on {{ .Date | time.Format ":date_long" }} at {{ .Date | time.Format ":time_short" }}</p>
 </article>
 {{ end }}
