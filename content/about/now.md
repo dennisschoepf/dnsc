@@ -1,9 +1,11 @@
 +++
 title = 'Now'
-date = 2024-01-28T16:25:00+01:00
+date = 2024-01-30T20:19:00+01:00
 author = "Dennis Schoepf"
 menu = ['footer']
+weight = 10
 draft = false
+description = 'Everything that I am currently up to.'
 +++
 
 This page is inspired by all the pages on [Nownownow](https://nownownow.com/). This page lists everything that I am currently working on (and what's generally going on in my life)
@@ -33,4 +35,4 @@ There are no specific time goals for these competitions, though I would be happy
 - Sub 6 hours Ironman 70.3
 - Sub 20 minute 5k run
 
-There is also something important happening for at the end of this year, which I cannot disclose as of yet. It is going to be posted here as soon as it happens.
+Also, at the end of this year I am going to work remotely from Spain for three months. I am doing this to get out of my hometown comfort zone and to learn Spanish for future travel. And well, the weather for training is just that much nicer 😊.
