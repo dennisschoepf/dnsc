@@ -1,0 +1,37 @@
+baseURL = 'https://staging.dnsc.io/'
+languageCode = 'en-US'
+title = '[staging] DNSC'
+theme = 'dnsc'
+
+[params]
+  [params.author]
+    name = "Dennis Schoepf"
+    description = "Hi, I'm Dennis! Software Developer by trade, creating digital solutions for public transport @Digital-H. If I'm not developing you can find me swimming, biking, running or photographing (and nerding out on split ergonomic keyboards)."
+  impressum = "/impressum"
+  [[params.socials]]
+    name = "Xing"
+    ref = "https://www.xing.com/profile/Dennis_Schoepf2"
+  [[params.socials]]
+    name = "Github"
+    ref = "https://github.com/dennisschoepf"
+  [[params.socials]]
+    name = "LinkedIn"
+    ref = "https://de.linkedin.com/in/dennis-sch%C3%B6pf-06b335102"
+
+[menu]
+  [[menu.nav]]
+    name = "Work"
+    pageRef = "/projects"
+    weight = 4
+  [[menu.nav]]
+    name = "Resources"
+    pageRef = "/resources"
+    weight = 2
+  [[menu.nav]]
+    name = "Writing"
+    pageRef = "/posts"
+    weight = 4
+  [[menu.nav]]
+    name = "About"
+    pageRef = "/about"
+    weight = 5
