@@ -1,13 +1,14 @@
 {{ define "main" }}
-<section class="screen-container mt-8 md:mt-12 mb-16">
-  <p>{{ .Content }}</p>
+<section class="prose screen-container mt-8 md:mt-12 mb-12">
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
 </section>
 <section class="screen-container">
   {{ if isset .Params "heading" }}
   <h1 class="font-semibold mb-6 text-2xl">{{ .Params.Heading }}</h1>
   {{end}}
   <ul>
-    {{ range .Pages }}
+    {{ range .Pages }} {{ with .Params.Hide }} {{ else }}
     <li class="mb-8">
       <a class="flex-col" href="{{ .Permalink }}">
         {{ if isset .Params "timerange" }}
@@ -22,10 +23,10 @@
         >
         {{ end }}
         <h2 class="font-semibold mt-1">{{ .Title }} &#x2192;</h2>
-        <section class="prose">{{ .Params.Description }}</section>
+        <section class="prose text-zinc-500">{{ .Params.Description }}</section>
       </a>
     </li>
-    {{ end }}
+    {{ end }} {{ end }}
   </ul>
 </section>
 {{ end }}
