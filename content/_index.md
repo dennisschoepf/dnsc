@@ -6,4 +6,4 @@ excludeHeader = true
 draft = false
 +++
 
-I'm Dennis, a software developer that crafts digital solutions for the public transportation sector. Outside of work, you can find me [swimming, biking, running ]({{<relref "/about/triathlon">}}) or taking [photos]({{<relref "/about/photography">}}). Take a look around here to find [resources]({{<relref "/resources" >}}) I frequently reference, examples of my [work]({{<relref "/projects">}}) and some [written thoughts]({{<relref "/posts">}}). Looking forward to hearing from you!
+I'm Dennis, a software developer that crafts digital solutions for the public transportation sector. Outside of work, you can find me [swimming, biking, running ]({{<relref "/about/now">}}) or taking photos. Take a look around here to find [resources]({{<relref "/resources" >}}) I frequently reference and examples of my [work]({{<relref "/projects">}}). Looking forward to hearing from you!
