@@ -5,6 +5,7 @@ author = "Dennis Schoepf"
 menu = ['footer']
 draft = false
 description = 'What I have done so far (professionally).'
+hide = true
 +++
 
 My CV

@@ -6,4 +6,4 @@ draft = false
 weight = 2
 +++
 
-Here you can read more about me.
+Some information about myself, what I am currently up to and the things I like to do besides software and product development.

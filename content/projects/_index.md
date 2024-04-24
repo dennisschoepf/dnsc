@@ -6,4 +6,4 @@ draft = false
 weight = 3
 +++
 
-This is the Work page.
+The projects I am currently working on, as well as a selection of my past work. My [CV]({{<relref "/projects/cv">}}) can also be found here if that is something you are interested in.
