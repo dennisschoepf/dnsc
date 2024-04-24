@@ -20,18 +20,14 @@ theme = 'dnsc'
 
 [menu]
   [[menu.nav]]
-    name = "Work"
-    pageRef = "/projects"
-    weight = 4
-  [[menu.nav]]
     name = "Resources"
     pageRef = "/resources"
-    weight = 2
+    weight = 1
   [[menu.nav]]
-    name = "Writing"
-    pageRef = "/posts"
-    weight = 4
+    name = "Work & Projects"
+    pageRef = "/projects"
+    weight = 2
   [[menu.nav]]
     name = "About"
     pageRef = "/about"
-    weight = 5
+    weight = 3
